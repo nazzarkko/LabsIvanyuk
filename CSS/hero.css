@@ -1,0 +1,50 @@
+.Headline{
+    width: 645px;
+    height: 464px;
+    top: 240px;
+    border-radius: 50px;
+    left: 240px;
+}
+
+.hero_title{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #212353;
+    width: 645px;
+    height: 184px;
+    top: 240px;
+    left: 240px;
+
+}
+.hero_paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    width: 380px;
+    height: 120px;
+    top: 474px;
+    left: 240px;
+
+}
+.hero_button{
+    width: 170px;
+    height: 60px;
+    top: 644px;
+    left: 240px;
+    border-radius: 50px;
+    background: #9C69E2;
+    color: #ffffff;
+    border: none;
+}
+.Headline{
+    padding-left: 240px;
+    top: 240px;
+}
+.hero{
+    background-image: url("../images/image1 1.svg");
+    background-repeat: no-repeat;
+    background-position: 603px;
+}

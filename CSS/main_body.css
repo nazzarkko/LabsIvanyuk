@@ -1,0 +1,33 @@
+.second-container {
+    display: flex;
+    width: 1117px;
+    height: 560px;
+    top: 904px;
+    left: 240px;
+    background-image: url("../images/Rectangle 34.svg");
+    background-repeat: no-repeat;
+    background-position: 240px;
+}
+
+.text {
+    width: 475px;
+    height: 310px;
+    padding-top: 125px;
+    padding-left: 62px;
+}
+.second_title{
+    width: 475px;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    color: #212353;
+}
+.second_paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+
+}
