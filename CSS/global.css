@@ -1,13 +1,14 @@
+.second_section{
+    left: 50%;
+}
+.hero_section{
+    left: 50%;
+}
 body{
     font-family: "Avenir", "Helvetica", sans-serif;
     color: #4B5D68;
 }
 
-.container{
-    width: 1248px;
-    height: 754px;
-    top: 50px;
-}
 a {
     text-decoration: none;
     color: #4B5D68;
@@ -15,9 +16,17 @@ a {
 li {
     display: block;
 }
-.second-container{
-    width: 1117px;
-    height: 560px;
-    top: 904px;
-    padding-left: 240px;
+.button_for_containers {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    text-align: left;
 }
+.footer_line{
+    margin-top: 10px;
+    width: auto;
+    height: 3px;
+    background-image: url("../images/purple_line.svg");
+}
+
