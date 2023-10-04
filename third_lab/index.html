@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <title>Aircrafts</title>
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h2>Ukrainian Military Aircrafts</h2>
+    <div class="header-controls">
+        <input id="find_input" type="text" placeholder="Search for aircraft...">
+        <button id="find_button" onclick="find_aircrafts()">Search</button>
+        <button id="cancel_find_button" onclick="cancel_search()">Clear</button>
+    </div>
+</header>
+
+<main class="main">
+    <div class="controls">
+        <button id="sort_button" onclick="sort_price()">Sort by price</button>
+        <div class="expenses">
+            <button id="count_button" onclick="calculate_total_price()">Count Total Price</button>
+            <span id="total_price">Total: 0</span>
+        </div>
+    </div>
+    <section id="aircraft_list">
+    </section>
+
+</main>
+
+</body>
+</html>
