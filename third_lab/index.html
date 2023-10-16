@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Aircrafts</title>
+    <script src="JS/index.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h2>Ukrainian Military Aircrafts</h2>
+    <div class="header-controls">
+        <input id="find_input" type="text" placeholder="Search for aircraft...">
+        <button id="find_button" onclick="findAircraft()">Search</button>
+        <button id="cancel_find_button" onclick="cancelSearch()">Clear</button>
+        <button id="createAircraft" onclick="toggleAside()">Add Aircraft</button>
+    </div>
+</header>
+
+<main class="main">
+    <div class="controls">
+        <button id="sort_button" onclick="sortByPrice()">Sort by price</button>
+        <div class="expenses">
+            <button id="count_button" onclick="calculateTotalPrice()">Count Total Price</button>
+            <span id="totalPrice">Total: 0</span>
+        </div>
+    </div>
+    <section id="aircraftList">
+    </section>
+    <aside id = "aircraftEditAside">
+        <form id = aircraftEditForm>
+            <h3>Edit Aircraft</h3>
+
+            <label for="changeModel">Change model</label>
+            <input type="text" id="changeModel">
+
+            <label for="changeDescription">Change description</label>
+            <textarea id="changeDescription"></textarea>
+
+            <label for="changePrice">Change price (in millions)</label>
+            <input type="number" id="changePrice">
+
+            <label for="changeType">Change type:</label>
+            <select id="changeType">
+                <option value="" disabled selected>Select type</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Bomber">Bomber</option>
+                <option value="Transport">Transport</option>
+                <option value="Reconnaissance">Reconnaissance</option>
+            </select>
+
+            <button class="saveButton" type="button" onclick="saveChangesAircraft()">Save changes</button>
+            <button class="closeButton" type="button" onclick="closeEditAside()">Close</button>
+        </form>
+    </aside>
+
+
+    <aside id="aircraftAside">
+        <form id="aircraftForm">
+            <h3>Add New Aircraft</h3>
+
+            <label for="name">Model:</label>
+            <input type="text" id="name">
+
+            <label for="description">Description:</label>
+            <textarea id="description"></textarea>
+
+            <label for="price">Price (in millions):</label>
+            <input type="number" id="price">
+
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="" disabled selected>Select type</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Bomber">Bomber</option>
+                <option value="Transport">Transport</option>
+                <option value="Reconnaissance">Reconnaissance</option>
+            </select>
+
+            <button type="button" onclick="saveAircraft()">Save</button>
+        </form>
+    </aside>
+</main>
