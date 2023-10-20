@@ -110,8 +110,9 @@ function saveAircraft() {
     if (newAircraft.price <= 0) {
         alert("Please ensure all fields are filled correctly, including the price!");
         return;
-    } else if (newAircraft.description == "" || newAircraft.model == "" || newAircraft.type == 0 || newAircraft.price == 0)
-        return alert("You don't fill the label!")
+    } else if (newAircraft.description == "" || newAircraft.model == "" || newAircraft.type == 0 || newAircraft.price == 0) {
+        return alert("You don't fill the label!");
+    }
     else
         aircrafts.push(newAircraft);
     searchResults = aircrafts.slice();
